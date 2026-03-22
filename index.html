@@ -1,145 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1LLXTTPTNR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halwa Labs - Crafted with Joy and Purpose</title>
+    <meta name="description" content="We build delightful apps that are fun to use and are useful.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="app">
+      <nav class="navbar">
+        <div class="nav-content" style="display: flex; width: 100%; justify-content: space-between; align-items: center;">
+          <div class="logo">Halwa Labs.</div>
+          <div class="nav-links">
+            <a href="about.html" style="color: var(--text-secondary); text-decoration: none; font-weight: 600; transition: color 0.3s; padding: 0.5rem;" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-secondary)'">About</a>
+          </div>
+        </div>
+      </nav>
 
-  gtag('config', 'G-1LLXTTPTNR');
-</script>
+      <header class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">Crafted with <span class="gradient-text">Joy</span> and <span class="gradient-text">Purpose</span></h1>
+          <p class="hero-subtitle">We build delightful apps that are fun to use and are useful.</p>
+        </div>
+      </header>
 
-  <meta name="description" content="Halwa labs We design and build modern web apps with a focus on simplicity, joy, and functionality.
-      Whether it's for internal tools, customer engagement, or passion projects — at halwa labs we love turning ideas into working products."/>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Halwa Labs</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+      <main class="projects-container">
+        <!-- Fun Games -->
+        <section class="category-section">
+          <h2 class="section-title">Fun Games</h2>
+          <div class="grid-container">
+            <a href="https://secretword.in/" target="_blank" rel="noopener noreferrer" class="project-card">
+              <div class="card-content">
+                <div class="card-header"><h3>Secret Word</h3></div>
+                <p>A classic code-breaking game of Cows and Bulls. Play in single-player or multiplayer mode.</p>
+              </div><div class="card-glow"></div>
+            </a>
+            <a href="https://minceletters.halwalabs.com/" target="_blank" rel="noopener noreferrer" class="project-card">
+              <div class="card-content">
+                <div class="card-header"><h3>Mince My Words</h3></div>
+                <p>Outsmart, Outspell, Outscore!</p>
+              </div><div class="card-glow"></div>
+            </a>
+            <a href="https://halwalabs.com/matchbox/index.html" target="_blank" rel="noopener noreferrer" class="project-card">
+              <div class="card-content">
+                <div class="card-header"><h3>Match Box</h3></div>
+                <p>A fun matching game for all ages. :)</p>
+              </div><div class="card-glow"></div>
+            </a>
+          </div>
+        </section>
 
-  <header>
-    <div class="logo"><a href="index.html">Halwa Labs</a></div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
+        <!-- Educational Apps -->
+        <section class="category-section">
+          <h2 class="section-title">Educational Apps</h2>
+          <div class="grid-container">
+            <a href="https://tables.halwalabs.com" target="_blank" rel="noopener noreferrer" class="project-card">
+              <div class="card-content">
+                <div class="card-header"><h3>Learning maths tables</h3></div>
+                <p>Help kids learn multiplication tables with some flash cards.</p>
+              </div><div class="card-glow"></div>
+            </a>
+          </div>
+        </section>
 
-  <section class="hero">
-    <h1>Crafted with Joy and Purpose</h1>
-    <p>We build delightful apps that are fun to use and are useful.</p>
-    <p>What's with this name? <u><a href="about.html">Here.</a></u></p>
-  </section>
+        <!-- Making Life Easy -->
+        <section class="category-section">
+          <h2 class="section-title">Making Life Easy</h2>
+          <div class="grid-container">
+            <a href="https://taskflow.halwalabs.com" target="_blank" rel="noopener noreferrer" class="project-card">
+              <div class="card-content">
+                <div class="card-header"><h3>TaskFlow</h3></div>
+                <p>Keep track of things at work. Document your quarter for performance reviews.</p>
+              </div><div class="card-glow"></div>
+            </a>
+            <a href="https://worshipsetlist.in" target="_blank" rel="noopener noreferrer" class="project-card">
+              <div class="card-content">
+                <div class="card-header"><h3>Worship Set List</h3></div>
+                <p>Organize worship songs and create shareable sets for small gatherings.</p>
+              </div><div class="card-glow"></div>
+            </a>
+            <a href="https://crosslens.org" target="_blank" rel="noopener noreferrer" class="project-card">
+              <div class="card-content">
+                <div class="card-header"><h3>CrossLens</h3></div>
+                <p>Children/Teen book reviews for/by discerning parents and teens</p>
+              </div><div class="card-glow"></div>
+            </a>
+          </div>
+        </section>
+      </main>
 
-
-  <section class="section fade-in" id="projects">
-
-    <!-- Announcement Banner -->
-<div class="announcement-banner">
-  🎉 New app Released! Try our latest personal work management app - <a href="https://taskflow.halwalabs.com">TaskFlow! </a>
-</div>
-
-
-    
-
-     <h2>Fun Games</h2>
-    <div class="cards">
-       
-
-
-         <a class="card" href="https://secretword.in/" target="_blank">
-        <h3>Secret Word (100s play this everyday!)</h3>
-        <p>A classic code-breaking game of Cows and Bulls. Play in single-player or <b>multiplayer mode.</b> </p>
-        </a>
-
-         <a class="card" href="https://minceletters.halwalabs.com/" target="_blank">
-        <h3>Mince My Words (Latest release)</h3>
-        <p>Outsmart, Outspell, Outscore!</b> </p>
-        </a>
-
-
-         <a class="card" href="https://dinavilayattu.com/" target="_blank">
-        <h3> தின விளையாட்டு (Tamil)</h3>
-        <p>நீங்களும் விளையாடிப் பாருங்கள்!</b> </p>
-        </a>
-
-
-         <a class="card" href="matchbox/index.html" target="_blank">
-        <h3>Match Box </h3>
-        <p>A fun matching game for all ages. :)</p>
-        </a>
-
-
-       
-       <!--
-        <a class="card" href="https://halwaboard.halwalabs.com" target="_blank">
-        <img src="assets/halwaboard.jpg" alt="HalwaBoard">
-        <h3>HalwaBoard</h3>
-        <p>Track habits, gratitude, prayers, and more on your personal dashboard.</p>
-        </a> -->
-      
+      <footer class="footer">
+        <p>&copy; 2026 Halwa Labs. All rights reserved.</p>
+      </footer>
     </div>
-
-<br><br><br>
-     <h2>Educational apps</h2>
-    <div class="cards">
-        <a class="card" href="https://tables.halwalabs.com" target="_blank">
-        
-        <h3>Learning maths tables (7/8 year olds)</h3>
-        <p>Help kids learn multiplication tables with some flash cards.</p>
-        </a>
-
-         
-       
-       <!--
-        <a class="card" href="https://halwaboard.halwalabs.com" target="_blank">
-        <img src="assets/halwaboard.jpg" alt="HalwaBoard">
-        <h3>HalwaBoard</h3>
-        <p>Track habits, gratitude, prayers, and more on your personal dashboard.</p>
-        </a> -->
-      
-    </div><br><br><br>
-
-    <h2>'Making Life Easy' apps</h2>
-    <div class="cards">
-        <a class="card" href="https://worshipsetlist.in" target="_blank">
-        
-        <h3>Worship Set List</h3>
-        <p>Organize worship songs and create shareable sets for small gatherings.</p>
-        </a>
-
-
-        <a class="card" href="https://crosslens.org" target="_blank">
-        <h3>CrossLens</h3>
-        <p>Children/Teen book reviews for/by discerning parents and teens</p>
-        </a>
-
-        <a class="card" href="https://taskflow.halwalabs.com" target="_blank">
-        <h3>TaskFlow <br>(Launched now!)</h3>
-        <p>Keep track of things at work. You can download all the things you have done end of quarter for performance review.</p>
-        </a>
-
-         
-       
-       <!--
-        <a class="card" href="https://halwaboard.halwalabs.com" target="_blank">
-        <img src="assets/halwaboard.jpg" alt="HalwaBoard">
-        <h3>HalwaBoard</h3>
-        <p>Track habits, gratitude, prayers, and more on your personal dashboard.</p>
-        </a> -->
-      
-    </div>
-    
-
-  </section>
-
-  <footer>
-    &copy; 2025 Halwa Labs — Built with ❤️ in Tirunelveli/Bengaluru.
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script>
+      document.querySelectorAll('.project-card').forEach(card => {
+        card.addEventListener('mousemove', e => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          card.style.setProperty('--mouse-x', x + 'px');
+          card.style.setProperty('--mouse-y', y + 'px');
+        });
+      });
+    </script>
+  </body>
 </html>

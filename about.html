@@ -1,61 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Halwa labs We design and build modern web apps with a focus on simplicity, joy, and functionality.
-      Whether it's for internal tools, customer engagement, or passion projects — at halwa labs we love turning ideas into working products."/>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1LLXTTPTNR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Halwa Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="app">
+      <nav class="navbar">
+        <div class="nav-content" style="display: flex; width: 100%; justify-content: space-between; align-items: center;">
+          <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Halwa Labs.</a></div>
+          <div class="nav-links">
+            <a href="index.html" style="color: var(--text-secondary); text-decoration: none; font-weight: 600; transition: color 0.3s; padding: 0.5rem;" onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-secondary)'">Home</a>
+          </div>
+        </div>
+      </nav>
 
-  gtag('config', 'G-1LLXTTPTNR');
-</script>
-  <title>About - Halwa Labs</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+      <section class="category-section" style="margin-top: 3rem;">
+        <h2 class="section-title">Our Story</h2>
+        <div class="about-content" style="background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 3rem; backdrop-filter: blur(12px); color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.02);">
+          <p style="margin-bottom: 1.5rem;">Halwa Labs was born in Tirunelveli, a town famous for its sweet, sticky, and rich <em>halwa</em>. Just like the dessert, we believe great digital products are the result of slow, steady craftsmanship — not just sugar, but heat, stirring, timing, and patience.</p>
+          <p style="margin-bottom: 1.5rem;">Coding is like making halwa: you mix creativity with discipline, take raw ideas and ingredients, and turn them into something joyful. Every feature, like every stir of the ladle, matters. The founder, a proud native of Tirunelveli, wanted to capture that spirit — making apps that are warm, meaningful, and maybe just a little indulgent.</p>
+          <p style="margin-bottom: 3rem;">At Halwa Labs, we don't rush code. We caramelize it.</p>
+          
+          <h3 style="margin-top: 2rem; margin-bottom: 1.5rem; color: var(--text-primary); font-size: 1.6rem; border-bottom: 2px solid var(--card-border); padding-bottom: 0.5rem; display: inline-block;">What We Do</h3>
+          <p style="margin-bottom: 1.5rem;">We design and build modern web apps with a focus on simplicity, joy, and functionality. Whether it's for internal tools, customer engagement, or passion projects — we love turning ideas into working products.</p>
+          <p>If you'd like us to build an app for you or your team, feel free to reach out: <a href="mailto:hello@halwalabs.com" style="color: var(--accent-color); text-decoration: none; font-weight: 700;">hello@halwalabs.com</a></p>
+        </div>
+      </section>
 
-  <header>
-    <div class="logo"><a href="index.html">Halwa Labs</a></div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
-
-  <section class="section fade-in">
-    <h2>Our Story</h2>
-    <p>
-      Halwa Labs was born in Tirunelveli, a town famous for its sweet, sticky, and rich *halwa*. Just like the dessert, we believe great digital products are the result of slow, steady craftsmanship — not just sugar, but heat, stirring, timing, and patience.
-    </p>
-    <p>
-      Coding is like making halwa: you mix creativity with discipline, take raw ideas and ingredients, and turn them into something joyful. Every feature, like every stir of the ladle, matters. The founder, a proud native of Tirunelveli, wanted to capture that spirit — making apps that are warm, meaningful, and maybe just a little indulgent.
-    </p>
-    <p>
-      At Halwa Labs, we don't rush code. We caramelize it.
-    </p>
-  </section>
-
-  <section class="section fade-in">
-    <h2>What We Do</h2>
-    <p>
-      We design and build modern web apps with a focus on simplicity, joy, and functionality.
-      Whether it's for internal tools, customer engagement, or passion projects — we love turning ideas into working products.
-    </p> <br>
-    <p>
-      If you’d like us to build an app for you or your team, feel free to reach out:
-      <a href="mailto:hello@halwalabs.com">hello@halwalabs.com</a>
-    </p>
-  </section>
-
-  <footer>
-    &copy; 2025 Halwa Labs — From Tirunelveli/Bengaluru with ❤️.
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+      <footer class="footer" style="margin-top: 6rem;">
+        <p>&copy; 2026 Halwa Labs. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
 </html>
