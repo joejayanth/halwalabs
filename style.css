@@ -221,23 +221,35 @@ body::before {
 .category-section:nth-of-type(2) { animation-delay: 0.4s; }
 .category-section:nth-of-type(3) { animation-delay: 0.6s; }
 
-/* MyShelf Featured Banner */
-.myshelf-banner {
-  background-color: #FDF7EC; /* Soft warm cream background */
-  border-radius: 24px;
-  padding: 3rem;
+/* Featured Carousel */
+.featured-carousel {
+  position: relative;
   margin: 2rem auto 5rem;
   max-width: 1000px;
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-  background-image: radial-gradient(#e5d9c5 1px, transparent 1px);
-  background-size: 24px 24px;
-  border: 1px solid rgba(229, 217, 197, 0.4);
   animation: fadeUp 1s ease-out forwards;
   animation-delay: 0.3s;
   opacity: 0;
+}
+
+.carousel-track {
+  display: flex;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  background-color: #FDF7EC;
+  background-image: radial-gradient(#e5d9c5 1px, transparent 1px);
+  background-size: 24px 24px;
+  border: 1px solid rgba(229, 217, 197, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  border-radius: 24px;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .banner-icon {
@@ -270,14 +282,6 @@ body::before {
   text-transform: uppercase;
 }
 
-.banner-title {
-  font-size: 2.5rem;
-  color: var(--text-primary);
-  margin: 0 0 1.5rem 0;
-  font-weight: 800;
-  letter-spacing: -1px;
-}
-
 .banner-description {
   font-size: 1.1rem;
   color: var(--text-secondary);
@@ -304,14 +308,77 @@ body::before {
   box-shadow: 0 15px 25px rgba(251, 133, 0, 0.3);
 }
 
+/* Carousel Arrows */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: white;
+  border: 1px solid var(--card-border);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-primary);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, background 0.2s ease;
+  margin-top: -12px; /* nudge up slightly to clear dots */
+}
+
+.carousel-arrow:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.14);
+  background: #fff8ee;
+}
+
+.carousel-arrow-left {
+  left: -20px;
+}
+
+.carousel-arrow-right {
+  right: -20px;
+}
+
+/* Carousel Dots */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,0.15);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-dot.active {
+  background: var(--accent-color);
+  transform: scale(1.25);
+}
+
 @media (max-width: 768px) {
-  .myshelf-banner {
+  .carousel-slide {
     padding: 2rem;
-    margin: 2rem 0 4rem;
     flex-direction: column;
     gap: 1.5rem;
   }
-  .banner-title {
-    font-size: 1.8rem;
+  .featured-carousel {
+    margin: 2rem 0 4rem;
+  }
+  .carousel-arrow-left {
+    left: 4px;
+  }
+  .carousel-arrow-right {
+    right: 4px;
   }
 }
