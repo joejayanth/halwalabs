@@ -189,6 +189,14 @@ body::before {
   white-space: nowrap;
 }
 
+.badge-multi {
+  background: rgba(99, 102, 241, 0.1);
+  color: #6366f1;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
 .card-content p {
   margin: 0;
   font-size: 0.95rem;
